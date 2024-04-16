@@ -13,6 +13,7 @@ import Jeans from "./components/pages/Jeans";
 import UserDetails from "./components/pages/UserDetails";
 import Admin from "./components/Admin";
 import Search from "./components/Search";
+import FormValidation from "./components/FormValidation";
 const App = () => {
   // const navigate = useNavigate();
   // const navigateTo = (url) => {
@@ -41,7 +42,7 @@ const App = () => {
         <Route path="/users/:id" element={<UserDetails />} />
         <Route path="/users/admin" element={<Admin />} />
         <Route path="/search" element={<Search />}></Route>
-
+        <Route path="/formvalidation" element={<FormValidation />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="*" element={<PageNotFound />}></Route>
       </Routes>
